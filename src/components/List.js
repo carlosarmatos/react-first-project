@@ -1,11 +1,13 @@
+import Item from "./Item"
+
 function List() {
 
     return (
         <>
             <h1>My list</h1>
             <ul>
-                <li>Example 1</li>
-                <li>Example 2</li>
+                <Item marca="BMW" anoLancamento={1985} />
+                <Item marca="Volkswagen" anoLancamento={1940} />
             </ul>
         </>
     )
