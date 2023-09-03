@@ -1,12 +1,16 @@
 import './App.css';
-import Conditional from './components/Conditional';
+import ListTwo from './components/ListTwo';
 
 
 function App() {
+
+  const myItems  = ['React', 'Vue', 'Angular'];
+
   return (
     <div className="App">
-      <h1>Conditional rendering</h1>
-      <Conditional />
+      <h1>Lists rendering</h1>
+      <ListTwo items={myItems} />
+      <ListTwo items={[]} />
     </div>
   );
 }
