@@ -4,16 +4,15 @@ import People from './components/People';
 import Phrase from './components/Phrase';
 import List from './components/List';
 import Item from './components/Item';
+import EventClick from './components/EventClick'
+import Form from './components/Form';
 
 
 function App() {
   return (
     <div className="App">
-      <Phrase />
-      <SayMyName name="Luna" />
-      <People name="Frankie" age="30" profession="Journalist" picture="https://via.placeholder.com/150" />
-      <List />
-      <Item />
+      <EventClick />
+      <Form />
     </div>
   );
 }
