@@ -1,16 +1,17 @@
 import './App.css';
-import ListTwo from './components/ListTwo';
+import { useState } from 'react';
+import Name from './components/Name';
+import Greeting  from './components/Greeting';
 
 
 function App() {
-
-  const myItems  = ['React', 'Vue', 'Angular'];
+  const [name, setName] = useState();
 
   return (
     <div className="App">
-      <h1>Lists rendering</h1>
-      <ListTwo items={myItems} />
-      <ListTwo items={[]} />
+      <h1>State Lift</h1>
+      <Name setName={setName}/>
+      <Greeting name={name} />
     </div>
   );
 }
