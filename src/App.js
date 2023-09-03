@@ -1,18 +1,12 @@
 import './App.css';
-import SayMyName from './components/SayMyName';
-import People from './components/People';
-import Phrase from './components/Phrase';
-import List from './components/List';
-import Item from './components/Item';
-import EventClick from './components/EventClick'
-import Form from './components/Form';
+import Conditional from './components/Conditional';
 
 
 function App() {
   return (
     <div className="App">
-      <EventClick />
-      <Form />
+      <h1>Conditional rendering</h1>
+      <Conditional />
     </div>
   );
 }
