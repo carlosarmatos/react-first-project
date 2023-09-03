@@ -1,13 +1,15 @@
-function myEvent() {
-    console.log('Activated! :)')
-}
+import Button from "./Button";
 
 function EventClick() {
+    function myEvent() {
+        console.log(`Number activated!`);
+    }
+
 
     return (
         <div>
-            <h1>Click</h1>
-            <button onClick={myEvent}>Activate</button>
+            <p>Click</p>
+            <Button event={myEvent} text="First Event" />
         </div>
     )
 }
